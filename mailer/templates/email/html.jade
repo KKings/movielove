@@ -1,0 +1,6 @@
+ul
+	each movie in listings
+		li 
+			img(src = '#{movie.image}')
+			h1 #{movie.title}
+			p #{movie.description}
