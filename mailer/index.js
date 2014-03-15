@@ -1,6 +1,6 @@
 
 /*
- * Module Depencies
+ * Module Dependencies
  */
 
 var mailer 		= require('nodemailer')
@@ -18,7 +18,7 @@ var transport	= mailer.createTransport("SMTP", config.mailer);
 var Notify = {
 	listings: function(options, done) {
 		var to 			= options.to
-		 ,  from		= config.auth.user
+		 ,  from		= config.mailer.auth.user
 		 ,  listings	= options.listings
 		 ,  locals		= { listings: listings };
 

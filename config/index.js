@@ -9,7 +9,7 @@ var path 			    = require('path')
 
 
 var mailer = {
-    service: "Gmail",
+    //service: "Gmail",
     auth: {
         user: "",
         pass: ""
@@ -22,6 +22,7 @@ module.exports = {
 		mailer: mailer,
     fileName: fileName,
     repoUrl: repoUrl,
-    domain: domain
+    domain: domain,
+    mailTo: mailTo
 	}
 }
